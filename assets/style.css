@@ -66,13 +66,19 @@ header {
 
 }
 
-img {
-    margin: 0px;
+main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    flex: 0 0 300px;
     width: 100%;
     height: auto;
+    padding: 8px;
+    margin: 5px;
     border: 10px;
     border-style: groove;
 }
@@ -86,13 +92,23 @@ img {
     width: 20%;
 }
 
+.pic3 {
+    width: 45%;
+    height: 55%;
+}
 
+.pic4 {
+    width: 45%;
+    height: 55%;
+}
 
+.pic5 {
+    width: 20%;
+}
 
-
-
-
-
+.pic6 {
+    width: 30%;
+}
 
 
 
