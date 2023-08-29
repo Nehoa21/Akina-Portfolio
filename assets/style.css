@@ -1,12 +1,102 @@
-/*:root {
-
-}
-
 * {
     background-color: aqua;
     margin: 0px;
     padding: 0px;
 }
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em 0 1em 0;
+}
+
+h1 {
+
+}
+
+nav {
+    display: inline;
+    margin: 2em 0 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    width: 88%;
+    height: auto;
+    padding: 8px;
+    margin: 5px;
+    border: 10px;
+    border-style: groove;
+}
+
+.pic {
+    min-width: none;
+}
+
+/* copied media queries from module 2 challenge solution as a baseline to get started */
+@media screen and (min-width: 768px) {
+
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .pic {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pic {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+/* practice code below */
+
+
+
+
+/*:root {
+
+}
+
 
 header {
     padding: 10px;
@@ -60,33 +150,11 @@ header {
 .footer p {
     text-align: center;
 }
-*/
 
-header {
 
-}
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-img {
-    flex: 0 0 300px;
-    width: 100%;
-    height: auto;
-    padding: 8px;
-    margin: 5px;
-    border: 10px;
-    border-style: groove;
-}
 
-.horiseon {
-    width: 30%;
-    
-}
 
 .pic2 {
     width: 20%;
@@ -94,12 +162,10 @@ img {
 
 .pic3 {
     width: 45%;
-    height: 55%;
 }
 
 .pic4 {
     width: 45%;
-    height: 55%;
 }
 
 .pic5 {
