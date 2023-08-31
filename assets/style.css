@@ -1,5 +1,5 @@
 * {
-    background-color: aqua;
+    
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;   
@@ -15,23 +15,31 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: #283b42;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 1em 0 1em 0;
+    margin: 5px 0 5px 0;
 }
 
 header h1 {
+    display: flex;
     padding: 5px;
     align-content: center;
     font-size: 300%;
-    background-color: aliceblue;
+    margin: 1em;
+    color: #D1ddd8;
 }
 
 nav {
-    display: inline;
-    margin: 2em 0 0 0;
+    display: flex;
+    align-items: flex-end;
+    margin: 1em;
+    
 }
 
 nav ul {
@@ -39,26 +47,34 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 450px;
+    width: 475px;
+    
 }
 
 nav ul li {
     display: inline-block;
-    font-size: 150%;
+    margin: 2px;
+    font-size: 200%;
     font-weight: bold;
+    color: #D1ddd8;
 }
 
 .about {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 80%;
-    margin: 2em 0 2em 0;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.about p {
+    color: #D1ddd8;
 }
 
 .about h2 {
-    display: flex;
-    flex-wrap: wrap;
+    
     font-size: 250%;
+    color: #D1ddd8;
 }
 
 main {
@@ -66,7 +82,8 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin-left: 1%;
+    /* margin-left: 1%; */
+    background-color: #ebebeb;
 }
 
 img {
@@ -88,10 +105,20 @@ footer {
     margin: 10px 0 10px 0;
 }
 
+footer h3 {
+    font-size: 200%;
+}
+
 footer ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    margin: 5px;
+    
+}
+
+footer ul li {
+    font-size: 150%;
 }
 
 /* .horiseon {
@@ -131,11 +158,6 @@ footer ul {
     .pic6*/ { 
         flex: 0 0 50%;
         max-width: 50%;
-    }
-
-    /* select the last child to grow to full width if it has space to grow */
-    .card-column:last-child {
-        flex-grow: 1;
     }
 }
 
