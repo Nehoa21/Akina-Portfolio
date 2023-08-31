@@ -15,11 +15,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #283b42;
-
 }
 
 header h1 {
-    display: flex;
     padding: 5px;
     font-size: 300%;
     margin: 0.7em;
@@ -30,7 +28,6 @@ nav {
     display: flex;
     align-items: flex-end;
     margin: 1em;
-    
 }
 
 nav ul {
@@ -39,7 +36,6 @@ nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 475px;
-    
 }
 
 nav ul li {
@@ -77,26 +73,24 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #D1ddd8;
 }
 
 .about {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     width: 80%;
     margin: 1.5em 0 1.5em 0;
 }
 
 .about p {
     display: flex;
-    align-content: center;
+    align-items: center;
     color: #283b42;
 }
 
 .about h2 {
-    
     font-size: 250%;
     color: #283b42;
 }
@@ -110,6 +104,12 @@ img {
     border-style: solid;
     border-color: #283b42;
     background-color: #1d6a96;
+    border-radius: 8px;
+    transition: all 0s ease-in-out;
+}
+  
+img:hover {
+    box-shadow: inset 0px 0px 30px rgb(14, 89, 175), 0 0 15px rgba(14, 89, 175);
 }
 
 footer {
@@ -154,7 +154,7 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .pic
     /* .horiseon
     .pic2
@@ -172,6 +172,10 @@ footer ul li {
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }
+
+    .about p {
+        text-align: center;
     }
 }
 
