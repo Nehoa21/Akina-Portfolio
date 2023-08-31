@@ -1,5 +1,4 @@
 * {
-    
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;   
@@ -11,27 +10,19 @@ h3 {
     font-weight:900;
 }
 
-a {
-    text-decoration: none;
-}
-
-body {
-    background-color: #283b42;
-}
-
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 5px 0 5px 0;
+    background-color: #283b42;
+
 }
 
 header h1 {
     display: flex;
     padding: 5px;
-    align-content: center;
     font-size: 300%;
-    margin: 1em;
+    margin: 0.7em;
     color: #D1ddd8;
 }
 
@@ -56,25 +47,29 @@ nav ul li {
     margin: 2px;
     font-size: 200%;
     font-weight: bold;
-    color: #D1ddd8;
+    color: #283b42;
 }
 
-.about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin: 1.5em 0 1.5em 0;
+a {
+    text-decoration: none;
 }
 
-.about p {
+/* Copied pseudo code from MDN and edited to work for my site */
+a:link {
     color: #D1ddd8;
 }
-
-.about h2 {
-    
-    font-size: 250%;
+  
+a:visited {
     color: #D1ddd8;
+}
+  
+a:focus,
+a:hover {
+    border-bottom: 5px solid;
+}
+  
+a:active {
+    color: #85b8cb;
 }
 
 main {
@@ -82,8 +77,28 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    /* margin-left: 1%; */
-    background-color: #ebebeb;
+    background-color: #D1ddd8;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.about p {
+    display: flex;
+    align-content: center;
+    color: #283b42;
+}
+
+.about h2 {
+    
+    font-size: 250%;
+    color: #283b42;
 }
 
 img {
@@ -93,8 +108,8 @@ img {
     margin: 5px;
     border: 10px;
     border-style: solid;
-    border-color: #9E9E9E;
-    background-image:linear-gradient(green 0%, blue 100%);
+    border-color: #283b42;
+    background-color: #1d6a96;
 }
 
 footer {
@@ -102,11 +117,13 @@ footer {
     flex-wrap: wrap;
     align-content: space-around;
     flex-direction: column;
-    margin: 10px 0 10px 0;
+    background-color: #283b42;
+    padding: 20px;
 }
 
 footer h3 {
     font-size: 200%;
+    color: #D1ddd8;
 }
 
 footer ul {
@@ -114,36 +131,12 @@ footer ul {
     display: flex;
     justify-content: space-around;
     margin: 5px;
-    
+    color: #D1ddd8;
 }
 
 footer ul li {
     font-size: 150%;
 }
-
-/* .horiseon {
-    flex: 1 0 25%;
-}
-
-.pic2 {
-    flex: 0 0 20%;
-}
-
-.pic3 {
-    flex: 0 0 50%;
-}
-
-.pic4 {
-    flex: 0 0 45%;
-}
-
-.pic5 {
-    flex: 0 0 20%;
-}
-
-.pic6 {
-    flex: 0 0 25%;
-} */
 
 /* copied media queries from module 2 challenge solution as a baseline to get started */
 @media screen and (min-width: 768px) {
@@ -187,12 +180,33 @@ footer ul li {
 
 /* practice code below */
 
+/* 
 
-
-
-/*:root {
-
+.horiseon {
+    flex: 1 0 25%;
 }
+
+.pic2 {
+    flex: 0 0 20%;
+}
+
+.pic3 {
+    flex: 0 0 50%;
+}
+
+.pic4 {
+    flex: 0 0 45%;
+}
+
+.pic5 {
+    flex: 0 0 20%;
+}
+
+.pic6 {
+    flex: 0 0 25%;
+}
+
+
 
 
 header {
@@ -248,7 +262,7 @@ header {
     text-align: center;
 }
 
-
+*/
 
 
 
