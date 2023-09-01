@@ -2,7 +2,7 @@
 
 This is the beginning of my personal portfolio of all the projects that I've done and will do for the next 5 months. This will keep them all in order and give easy access to anyone that wishes to view them.
 
-Below is what my portfolio looks like, and [here]() is the link drectly to it. Take a look!
+Below is what my portfolio looks like, and [here](https://nehoa21.github.io/Akina-Portfolio/) is the link drectly to it. Take a look!
 
 ![Potfolio Screenshot](./assets/images/Portfolio-screenshot.png)
 
