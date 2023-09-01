@@ -57,7 +57,7 @@ a {
     text-decoration: none;
 }
 
-/* Copied pseudo code from MDN and edited to work for my site */
+/* Copied selector code from MDN and edited to work for my site */
 a:link {
     color: var(--color2);
 }
@@ -86,7 +86,7 @@ main {
 
 .about {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 80%;
     margin: 1.5em 0 1.5em 0;
 }
@@ -96,6 +96,7 @@ main {
     align-items: center;
     color: var(--color1);
     font-size: large;
+    width: 50%
 }
 
 .about h2 {
@@ -148,8 +149,6 @@ footer ul li {
 
 /* copied media queries from module 2 challenge solution as a baseline to get started */
 @media screen and (min-width: 768px) {
-
-    /* on tablets, set columns to only be 50% of the width and not grow */
     .pic 
     /* .horiseon
     .pic2
@@ -170,12 +169,24 @@ footer ul li {
     .pic4
     .pic5
     .pic6 */{ 
-        flex: 0 0 33.333%;
+        flex: 0 0 34%;
         max-width: 33.333%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    header h1 {
+        display: flex;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic {
+        width: 90%;
+    }
     .about {
         flex-direction: column;
         align-items: center;
@@ -184,6 +195,7 @@ footer ul li {
 
     .about p {
         text-align: center;
+        width: 80%;
     }
 }
 
